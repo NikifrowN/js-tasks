@@ -34,3 +34,28 @@ arr.push(function() {
 });
 
 arr[2](); // a, b, function(){...}
+
+
+//==== Task-5 ===================
+//Напишите функцию sumInput(), которая:
+
+// Просит пользователя ввести значения, используя prompt и сохраняет их в массив.
+// Заканчивает запрашивать значения, когда пользователь введёт не числовое значение, пустую строку или нажмёт «Отмена».
+// Подсчитывает и возвращает сумму элементов массива.
+// P.S. Ноль 0 – считается числом, не останавливайте ввод значений при вводе «0».
+
+function getMaxSubSum(arr) {
+   let maxSum = 0;
+
+   for (let i = 0; i < arr.length; i++) {
+      let sumFixedStart = 0;
+      for (let j = i; j < arr.length; j++) {
+         sumFixedStart += arr[j];
+         maxSum = Math.max(maxSum, sumFixedStart);
+      }
+   }
+
+   return maxSum;
+}
+
+console.log(getMaxSubSum([-1, 2, 3, -9]));
