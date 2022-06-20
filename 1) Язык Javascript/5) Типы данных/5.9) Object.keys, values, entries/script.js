@@ -19,7 +19,7 @@ function sumSalaries(salaries) {
 
 console.log(sumSalaries(salaries));
 
-//==== Task-1 ===================
+//==== Task-2 ===================
 // Подсчёт количества свойств объекта
 
 function count(obj) {
