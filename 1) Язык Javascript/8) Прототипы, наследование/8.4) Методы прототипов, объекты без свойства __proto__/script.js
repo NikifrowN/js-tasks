@@ -20,7 +20,3 @@ for(let key in dictionary) {
 
 // ваш метод toString в действии
 console.log(dictionary); // "apple,__proto__"
-
-//==== Task-2 ===================
-// Разница между вызовами
-
