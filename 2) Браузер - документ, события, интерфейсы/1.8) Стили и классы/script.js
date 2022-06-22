@@ -10,7 +10,6 @@ function showNotification({top = 0, right = 0, html}) {
    setTimeout(() => elem.remove(), 1500);
 }
 
-
 showNotification({
    top: 10,
    right: 10,
