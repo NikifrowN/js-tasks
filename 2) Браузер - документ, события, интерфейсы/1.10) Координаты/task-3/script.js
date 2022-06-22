@@ -33,6 +33,6 @@ function showNote(anchor, position, html) {
 
 let blockquote = document.querySelector('blockquote');
 
-showNote(blockquote, "top", "note above");
-showNote(blockquote, "right", "note at the right");
-showNote(blockquote, "bottom", "note below");
+showNote(blockquote, "top", "top");
+showNote(blockquote, "right", "right");
+showNote(blockquote, "bottom", "below");
